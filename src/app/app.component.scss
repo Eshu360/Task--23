@@ -1,0 +1,27 @@
+$margin: 10px;
+
+main {
+    border: 2px solid gray;
+    margin: 2% 10%;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    padding: $margin;
+    font-weight: 300;
+}
+
+th {
+    font-weight: 500;
+    text-align: left;
+}
