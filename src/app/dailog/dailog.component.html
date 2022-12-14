@@ -1,6 +1,6 @@
 <h1 mat-dialog-title>Profile form Edit</h1>
-<div mat-dialog-content>
-    <form [formGroup]="profileForm">
+<div fxLayoutAlign="center center" fxFlexFill mat-dialog-content>
+    <form flexLayoutAlign="streth" fxLayout="column" [formGroup]="profileForm">
         <mat-form-field appearance="outline">
             <mat-label>Name</mat-label>
             <input formControlName="name" matInput placeholder="Shushi">
@@ -17,7 +17,6 @@
             <mat-radio-button value="Female">Female</mat-radio-button> &nbsp;
         </mat-radio-group>
         <br>
-
         <mat-form-field appearance="outline">
             <mat-label>Choose a date</mat-label>
             <input formControlName="date" matInput [matDatepicker]="picker">
@@ -26,13 +25,11 @@
             <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
         <br>
-
         <mat-form-field appearance="outline" class="example-full-width">
             <mat-label>Telephone</mat-label>
             <span matPrefix>+91 &nbsp;</span>
             <input formControlName="mobile" type="tel" matInput placeholder="95555-51234">
         </mat-form-field>
-        <br>
         <mat-form-field appearance="outline" class=" example-full-width">
             <mat-label>Address</mat-label>
             <textarea formControlName="address" matInput placeholder=""></textarea>
